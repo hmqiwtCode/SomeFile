@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_circle_ci"
+        />
+
+    <TextView
+        android:id="@+id/grow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grow \n your business"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/circle"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"/>
+
+    <TextView
+        android:id="@+id/iwil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/backSheet"
+        app:layout_constraintTop_toBottomOf="@+id/grow"
+        android:layout_marginTop="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="@+id/grow"
+        app:layout_constraintEnd_toEndOf="@+id/grow"
+        android:text=" We will help you to grow your business usingonline server"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/iwil"
+        app:layout_constraintStart_toStartOf="@+id/iwil"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="SIGN UP"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/iwil"
+        app:layout_constraintEnd_toEndOf="@+id/iwil"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/howToWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How To Work"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/backSheet"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
